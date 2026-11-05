@@ -1,12 +1,63 @@
-Prefix(:=<https://www.inf.ufrgs.br/ontologies/ofl/imports/iof-core_import.owl>)
-Prefix(obo:=<http://purl.obolibrary.org/obo/>)
+Prefix(:=<https://www.inf.ufrgs.br/ontologies/ofl/imports/iof-core_import.owl#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
+
 
 Ontology(<https://www.inf.ufrgs.br/ontologies/ofl/imports/iof-core_import.owl>
-# This is a placeholder, it will be regenerated when makefile is first executed.
+<https://www.inf.ufrgs.br/ontologies/ofl/releases/2026-11-05/imports/iof-core_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <https://spec.industrialontologies.org/ontology/202401/core/Core/>)
+Annotation(owl:versionInfo "2026-11-05")
+
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel>))
+Declaration(NamedIndividual(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional>))
+Declaration(NamedIndividual(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.org/dc/terms/description> (description)
+
+AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/description> "description"@en-us)
+
+# Annotation Property: <http://purl.org/dc/terms/license> (license)
+
+AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/license> "license"@en-us)
+
+# Annotation Property: <http://purl.org/dc/terms/title> (title)
+
+AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/title> "title"@en-us)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel> (maturity level)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel> "maturity level"@en-us)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> (provisional)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> "provisional"@en-us)
+ClassAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional>)
+
+# Individual: <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> (released)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> "released"@en-us)
+ClassAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released>)
+
+
 )
