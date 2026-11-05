@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ofl
+
+idspace: OFL
+base_url: /obo/ofl
+
+products:
+- ofl.owl: https://raw.githubusercontent.com/INF-UFRGS-Ontologies/OFL/master/ofl.owl
+- ofl.obo: https://raw.githubusercontent.com/INF-UFRGS-Ontologies/OFL/master/ofl.obo
+
+term_browser: ontobee
+example_terms:
+- OFL_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/INF-UFRGS-Ontologies/OFL/v
+
+- prefix: /tracker/
+  replacement: https://github.com/INF-UFRGS-Ontologies/OFL/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/OFL?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/INF-UFRGS-Ontologies/OFL/master/
+

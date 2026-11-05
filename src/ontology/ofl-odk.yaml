@@ -1,0 +1,39 @@
+## General Settings ##
+uribase: https://www.inf.ufrgs.br/ontologies
+license: https://opensource.org/license/mit
+github_org: INF-UFRGS-Ontologies
+ci:
+ - github_actions
+export_formats:
+ - owl
+ - ttl
+release_artefacts:
+ - base
+ - full
+ - simple
+
+## Ontology Metadata ##
+id: ofl
+title: Ontology of Functional Locations
+description: "A BFO-compliant ontology for modeling functional locations as persistent spatial sites in industrial asset management systems, based on the Ontology Design Pattern developed by Santos et al. (2026). The pattern separates five concerns: spatial site (bfo:Site), organizational code (iao:CentrallyRegisteredIdentifier), equipment tag (iao:CentrallyRegisteredIdentifier), functional specification (iao:DirectiveInformationEntity), and installed equipment (iof:MaterialArtifact). Both identifiers denote the functional location site, not the physical equipment — the relationship to equipment is always mediated through the site."
+creators:
+ - Nicolau Santos
+contributors:
+ - Cauã Roca Antunes
+ - Fabrício Rodrigues
+ - Haroldo Rojas
+ - Mara Abel
+ - Rafael Petry
+ - Regis Romeu
+
+## Github Settings ##
+repo: OFL
+git_main_branch: master
+
+## O3PO Specific Settings ##
+import_group:
+  products:
+    - id: bfo
+    - id: iao
+    - id: iof-core
+      mirror_from: https://spec.industrialontologies.org/ontology/202401/core/Core/
