@@ -14,15 +14,6 @@ bin/
 
 .github/token.txt
 
-/ofl.owl
-/ofl.obo
-/ofl.json
-/ofl.db
-/ofl-base.*
-/ofl-basic.*
-/ofl-full.*
-/ofl-simple.*
-/ofl-simple-non-classified.*
 /mappings/
 /patterns/
 /reports/

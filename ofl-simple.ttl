@@ -1,0 +1,330 @@
+@prefix : <https://www.inf.ufrgs.br/ontologies/ofl/ofl-simple.ttl#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix annotation: <https://spec.industrialontologies.org/ontology/annotation/> .
+@base <https://www.inf.ufrgs.br/ontologies/ofl/ofl-simple.ttl> .
+
+<https://www.inf.ufrgs.br/ontologies/ofl/ofl-simple.ttl> rdf:type owl:Ontology ;
+                                                          owl:versionIRI <https://www.inf.ufrgs.br/ontologies/ofl/releases/2026-11-09/ofl-simple.ttl> ;
+                                                          terms:contributor "Cauã Antunes"@en ,
+                                                                            "Haroldo Rojas"@en ,
+                                                                            "Joel Carbonera"@en ,
+                                                                            "Mara Abel"@en ,
+                                                                            "Rafael Petry"@en ,
+                                                                            "Regis Romeu"@en ;
+                                                          terms:created "2025-12-17"^^xsd:date ;
+                                                          terms:creator "Nicolau Santos"@en ;
+                                                          terms:description "A BFO-compliant ontology for modeling functional locations as persistent spatial sites in industrial asset management systems, based on the Ontology Design Pattern developed by Santos et al. (2026). The pattern separates five concerns: spatial site (bfo:Site), organizational code (iao:CentrallyRegisteredIdentifier), equipment tag (iao:CentrallyRegisteredIdentifier), functional specification (iao:DirectiveInformationEntity), and installed equipment (iof:MaterialArtifact). Both identifiers denote the functional location site, not the physical equipment — the relationship to equipment is always mediated through the site."@en ,
+                                                                            "Uma ontologia em conformidade com a BFO para modelar locais de instalação como sítios espaciais persistentes em sistemas de gestão de ativos industriais, baseada no padrão de projeto ontológico desenvolvido por Santos et al. (2026). O padrão separa cinco preocupações: sítio espacial (bfo:Site), código do local de instalação (iao:CentrallyRegisteredIdentifier), tag de equipamento (iao:CentrallyRegisteredIdentifier), especificação funcional (iao:DirectiveInformationEntity) e equipamento instalado (iof:MaterialArtifact). Ambos os identificadores denotam o local de instalação, não o equipamento físico — a relação com o equipamento é sempre mediada pelo sítio."@pt-br ;
+                                                          terms:license <http://opensource.org/licenses/MIT> ;
+                                                          terms:modified "2026-07-01"^^xsd:date ;
+                                                          terms:subject "Functional Location"@en ,
+                                                                        "Gestão de Ativos Industriais"@pt-br ,
+                                                                        "ISO 14224"@en ,
+                                                                        "Industrial Asset Management"@en ,
+                                                                        "Local de Instalação"@pt-br ;
+                                                          terms:title "Ontologia de Locais de Instalação"@pt-br ,
+                                                                      "Ontology of Functional Locations"@en ;
+                                                          owl:versionInfo "2026-11-09" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+obo:IAO_0000115 rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+terms:contributor rdf:type owl:AnnotationProperty ;
+                  rdfs:label "contributor"@en-us .
+
+
+###  http://purl.org/dc/terms/created
+terms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+terms:creator rdf:type owl:AnnotationProperty ;
+              rdfs:label "creator"@en-us .
+
+
+###  http://purl.org/dc/terms/description
+terms:description rdf:type owl:AnnotationProperty ;
+                  rdfs:label "description" ,
+                             "description"@en-us .
+
+
+###  http://purl.org/dc/terms/license
+terms:license rdf:type owl:AnnotationProperty ;
+              rdfs:label "license" ,
+                         "license"@en-us .
+
+
+###  http://purl.org/dc/terms/modified
+terms:modified rdf:type owl:AnnotationProperty ;
+               rdfs:label "modified"@en-us .
+
+
+###  http://purl.org/dc/terms/subject
+terms:subject rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+terms:title rdf:type owl:AnnotationProperty ;
+            rdfs:label "title" ,
+                       "title"@en-us .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+skos:altLabel rdf:type owl:AnnotationProperty ;
+              rdfs:label "alternative label"@en-us .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+skos:example rdf:type owl:AnnotationProperty ;
+             rdfs:label "example"@en-us .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+###  https://spec.industrialontologies.org/ontology/annotation/adaptedFrom
+annotation:adaptedFrom rdf:type owl:AnnotationProperty .
+
+
+###  https://spec.industrialontologies.org/ontology/annotation/explanatoryNote
+annotation:explanatoryNote rdf:type owl:AnnotationProperty .
+
+
+###  https://spec.industrialontologies.org/ontology/annotation/firstOrderLogicDefinition
+annotation:firstOrderLogicDefinition rdf:type owl:AnnotationProperty .
+
+
+###  https://spec.industrialontologies.org/ontology/annotation/isPrimitive
+annotation:isPrimitive rdf:type owl:AnnotationProperty .
+
+
+###  https://spec.industrialontologies.org/ontology/annotation/maturity
+annotation:maturity rdf:type owl:AnnotationProperty .
+
+
+###  https://spec.industrialontologies.org/ontology/annotation/naturalLanguageDefinition
+annotation:naturalLanguageDefinition rdf:type owl:AnnotationProperty .
+
+
+###  https://spec.industrialontologies.org/ontology/annotation/semiFormalNaturalLanguageDefinition
+annotation:semiFormalNaturalLanguageDefinition rdf:type owl:AnnotationProperty .
+
+
+###  https://spec.industrialontologies.org/ontology/annotation/synonym
+annotation:synonym rdf:type owl:AnnotationProperty .
+
+
+###  https://spec.industrialontologies.org/ontology/annotation/usageNote
+annotation:usageNote rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000050
+obo:BFO_0000050 rdf:type owl:ObjectProperty ,
+                         owl:TransitiveProperty ;
+                obo:IAO_0000115 "a core relation that holds between a part and its whole"@en ;
+                rdfs:label "part of"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000171
+obo:BFO_0000171 rdf:type owl:ObjectProperty ;
+                rdfs:label "located in"@en ;
+                skos:prefLabel "located in at some time"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000219
+obo:IAO_0000219 rdf:type owl:ObjectProperty ;
+                obo:IAO_0000115 "A primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to 'pick out' the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically"@en ;
+                rdfs:label "denotes"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000007
+<https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000007> rdf:type owl:ObjectProperty ;
+                                                      rdfs:label "has boundary determined by"@en ,
+                                                                 "tem limite determinado por"@pt-br ;
+                                                      skos:example "FL_PT23424_Site hasBoundaryDeterminedBy DeckC_Structure"@en ;
+                                                      annotation:firstOrderLogicDefinition "hasBoundaryDeterminedBy(x,y) → FunctionalLocation(x) ∧ MaterialEntity(y) ∧ boundaryOf(x) determinedInRelationTo(y)"@en ;
+                                                      annotation:isPrimitive "true"^^xsd:boolean ;
+                                                      annotation:maturity <https://spec.industrialontologies.org/ontology/individual/Provisional> ;
+                                                      annotation:naturalLanguageDefinition "A relation between a functional location and a material entity such that the material entity provides the reference frame that determines the spatial boundaries of the functional location."@en ,
+                                                                                           "Uma relação entre um local de instalação e uma entidade material tal que a entidade material fornece o referencial que determina os limites espaciais do local de instalação."@pt-br ;
+                                                      annotation:semiFormalNaturalLanguageDefinition "if x hasBoundaryDeterminedBy y then x is a FunctionalLocation and y is a MaterialEntity and the spatial boundaries of x are determined in relation to y"@en ;
+                                                      annotation:usageNote "Implements BFO site semantics: site boundaries are determined in relation to material entities but not by coincidence with those entities."@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000012
+<https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000012> rdf:type owl:ObjectProperty ;
+                                                      owl:inverseOf <https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000024> ;
+                                                      rdfs:label "has system site part"@en ,
+                                                                 "tem parte de sítio do sistema"@pt-br ;
+                                                      annotation:maturity <https://spec.industrialontologies.org/ontology/individual/Provisional> .
+
+
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000013
+<https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000013> rdf:type owl:ObjectProperty ;
+                                                      owl:propertyChainAxiom ( <https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000018>
+                                                                               [ owl:inverseOf <https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000016>
+                                                                               ]
+                                                                             ) ;
+                                                      rdfs:label "has tag"@en ,
+                                                                 "tem tag"@pt-br ;
+                                                      annotation:explanatoryNote "Esta relação captura a abreviação pragmática industrial onde engenheiros dizem 'válvula XV-23424' para significar 'a válvula atualmente instalada na posição denotada por XV-23424'. A tag não denota o equipamento — denota a posição."@pt-br ,
+                                                                                 "This relation captures the industrial pragmatic shorthand where engineers say 'valve XV-23424' to mean 'the valve currently installed at the position denoted by XV-23424'. The tag does not denote the equipment — it denotes the position."@en ;
+                                                      annotation:firstOrderLogicDefinition "hasTag(x,y) ↔ ∃z(FunctionalLocation(z) ∧ installedAt(x,z) ∧ identifiesLocation(y,z))"@en ;
+                                                      annotation:isPrimitive "false"^^xsd:boolean ;
+                                                      annotation:maturity <https://spec.industrialontologies.org/ontology/individual/Provisional> ;
+                                                      annotation:naturalLanguageDefinition "A derived relation between equipment and an equipment tag such that the equipment is installed at the functional location identified by the tag. This relation is not asserted but entailed through a property chain: equipment is installedAt a FunctionalLocation, and the EquipmentTag identifiesLocation that same FunctionalLocation."@en ,
+                                                                                           "Uma relação derivada entre um equipamento e uma tag de equipamento tal que o equipamento está instalado no local de instalação identificado pela tag. Esta relação não é assertada, mas inferida por uma cadeia de propriedades: o equipamento está installedAt um FunctionalLocation, e a EquipmentTag identifiesLocation o mesmo FunctionalLocation."@pt-br ;
+                                                      annotation:semiFormalNaturalLanguageDefinition "if x hasTag y then there exists a FunctionalLocation z such that x installedAt z and y identifiesLocation z"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000014
+<https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000014> rdf:type owl:ObjectProperty ;
+                                                      rdfs:label "hospedado por"@pt-br ,
+                                                                 "hosted by"@en ;
+                                                      skos:example "Sensor PT-23424 hostedBy Valve XV-22342"@en ;
+                                                      annotation:isPrimitive "true"^^xsd:boolean ;
+                                                      annotation:maturity <https://spec.industrialontologies.org/ontology/individual/Provisional> ;
+                                                      annotation:naturalLanguageDefinition "A relation between a sensor and an equipment item such that the sensor is physically mounted on the equipment item. The sensor has its own functional location but is physically hosted by the equipment."@en ,
+                                                                                           "Uma relação entre um sensor e um item de equipamento tal que o sensor está fisicamente montado no item de equipamento. O sensor tem seu próprio local de instalação, mas é fisicamente hospedado pelo equipamento."@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000015
+<https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000015> rdf:type owl:ObjectProperty ;
+                                                      rdfs:subPropertyOf obo:IAO_0000219 ;
+                                                      rdf:type owl:FunctionalProperty ;
+                                                      rdfs:label "identifica"@pt-br ,
+                                                                 "identifies"@en ;
+                                                      annotation:firstOrderLogicDefinition "identifies(x,y) → FunctionalLocationCode(x) ∧ FunctionalLocation(y) ∧ denotes(x,y) ∧ ∀z(identifies(x,z) → z = y)"@en ;
+                                                      annotation:isPrimitive "true"^^xsd:boolean ;
+                                                      annotation:maturity <https://spec.industrialontologies.org/ontology/individual/Provisional> ;
+                                                      annotation:naturalLanguageDefinition "A relation between a functional location code and a functional location such that the code uniquely denotes the functional location within the organizational hierarchy following the ISO 14224 coding scheme."@en ,
+                                                                                           "Uma relação entre um código de local de instalação e um local de instalação tal que o código denota unicamente o local de instalação dentro da hierarquia organizacional seguindo o esquema de codificação ISO 14224."@pt-br ;
+                                                      annotation:semiFormalNaturalLanguageDefinition "if x identifies y then x is a FunctionalLocationCode and y is a FunctionalLocation and x uniquely denotes y"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000016
+<https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000016> rdf:type owl:ObjectProperty ;
+                                                      rdfs:subPropertyOf obo:IAO_0000219 ;
+                                                      rdf:type owl:FunctionalProperty ;
+                                                      rdfs:label "identifica local de instalação"@pt-br ,
+                                                                 "identifies location"@en ;
+                                                      annotation:explanatoryNote "CRITICAL DESIGN DECISION: The equipment tag denotes the functional location (the position), NOT the physical equipment. The relationship between tag and equipment is mediated through the site via the hasTag property chain."@en ,
+                                                                                 "DECISÃO DE PROJETO CRÍTICA: A tag de equipamento denota o local de instalação (a posição), NÃO o equipamento físico. A relação entre tag e equipamento é mediada pelo sítio através da cadeia de propriedades hasTag."@pt-br ;
+                                                      annotation:firstOrderLogicDefinition "identifiesLocation(x,y) → EquipmentTag(x) ∧ FunctionalLocation(y) ∧ denotes(x,y) ∧ ∀z(identifiesLocation(x,z) → z = y)"@en ;
+                                                      annotation:isPrimitive "true"^^xsd:boolean ;
+                                                      annotation:maturity <https://spec.industrialontologies.org/ontology/individual/Provisional> ;
+                                                      annotation:naturalLanguageDefinition "A relation between an equipment tag and a functional location such that the tag uniquely identifies the functional location where equipment of the designated type is or can be installed. The tag prefix convention encodes the expected equipment type at the position."@en ,
+                                                                                           "Uma relação entre uma tag de equipamento e um local de instalação tal que a tag identifica unicamente o local de instalação onde equipamento do tipo designado está ou pode ser instalado. A convenção de prefixo da tag codifica o tipo esperado de equipamento na posição."@pt-br ;
+                                                      annotation:semiFormalNaturalLanguageDefinition "if x identifiesLocation y then x is an EquipmentTag and y is a FunctionalLocation and x denotes y"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000017
+<https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000017> rdf:type owl:ObjectProperty ,
+                                                               owl:FunctionalProperty ;
+                                                      rdfs:label "indexado por sítio"@pt-br ,
+                                                                 "indexed by site"@en ;
+                                                      rdfs:seeAlso "CQ2: Temporal continuity across replacements"@en ;
+                                                      annotation:isPrimitive "true"^^xsd:boolean ;
+                                                      annotation:maturity <https://spec.industrialontologies.org/ontology/individual/Provisional> ;
+                                                      annotation:naturalLanguageDefinition "A relation between a time-stamped measured dataset and a functional location such that the dataset is indexed by the functional location rather than by individual equipment instances, enabling automatic data continuity across equipment replacements."@en ,
+                                                                                           "Uma relação entre um conjunto de dados medidos com carimbo de tempo e um local de instalação tal que o conjunto de dados é indexado pelo local de instalação ao invés de por instâncias individuais de equipamento, permitindo continuidade automática de dados através de substituições de equipamento."@pt-br ;
+                                                      annotation:usageNote "KEY PATTERN: Enables automatic continuity without application logic to 'stitch' data from different equipment instances."@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000018
+<https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000018> rdf:type owl:ObjectProperty ;
+                                                      rdfs:subPropertyOf obo:BFO_0000171 ;
+                                                      rdfs:label "instalado em"@pt-br ,
+                                                                 "installed at"@en ;
+                                                      skos:example "Sensor_PT23424_v2 installedAt FL_PT23424_Site (2017-06-16 to 2022-03-10)"@en ;
+                                                      annotation:firstOrderLogicDefinition "installedAt(x,y) → MaterialArtifact(x) ∧ FunctionalLocation(y) ∧ ∃t(located_in(x,y,t))"@en ;
+                                                      annotation:isPrimitive "true"^^xsd:boolean ;
+                                                      annotation:maturity <https://spec.industrialontologies.org/ontology/individual/Provisional> ;
+                                                      annotation:naturalLanguageDefinition "A relation between a piece of equipment and a functional location such that the equipment is physically installed at the functional location during some temporally bounded period. The temporal bounds are captured via installedDate and removedDate data properties."@en ,
+                                                                                           "Uma relação entre uma peça de equipamento e um local de instalação tal que o equipamento está fisicamente instalado no local de instalação durante algum período temporalmente delimitado. Os limites temporais são capturados pelas propriedades de dados installedDate e removedDate."@pt-br ;
+                                                      annotation:semiFormalNaturalLanguageDefinition "if x installedAt y then x is a MaterialArtifact and y is a FunctionalLocation and x is located in y at some time"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000024
+<https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000024> rdf:type owl:ObjectProperty ;
+                                                      rdfs:subPropertyOf obo:BFO_0000050 ;
+                                                      rdf:type owl:TransitiveProperty ;
+                                                      rdfs:label "part of system site"@en ,
+                                                                 "parte de sítio do sistema"@pt-br ;
+                                                      skos:example "MaintainableItemSite partOfSystemSite EquipmentUnitSite"@en ,
+                                                                   "SubsystemSite partOfSystemSite SystemSite"@en ;
+                                                      annotation:firstOrderLogicDefinition "partOfSystemSite(x,y) → FunctionalLocation(x) ∧ FunctionalLocation(y) ∧ partOf(x,y)"@en ;
+                                                      annotation:isPrimitive "true"^^xsd:boolean ;
+                                                      annotation:maturity <https://spec.industrialontologies.org/ontology/individual/Provisional> ;
+                                                      annotation:naturalLanguageDefinition "A relation between two functional locations such that the first is a proper part of the second in the ISO 14224 hierarchical decomposition. This relation is transitive, enabling queries across hierarchy levels."@en ,
+                                                                                           "Uma relação entre dois locais de instalação tal que o primeiro é parte própria do segundo na decomposição hierárquica ISO 14224. Esta relação é transitiva, permitindo consultas através dos níveis hierárquicos."@pt-br ;
+                                                      annotation:semiFormalNaturalLanguageDefinition "if x partOfSystemSite y then x is a FunctionalLocation and y is a FunctionalLocation and x is part of y"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000025
+<https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000025> rdf:type owl:ObjectProperty ;
+                                                      rdfs:label "performed at"@en ,
+                                                                 "realizada em"@pt-br ;
+                                                      annotation:isPrimitive "true"^^xsd:boolean ;
+                                                      annotation:maturity <https://spec.industrialontologies.org/ontology/individual/Provisional> ;
+                                                      annotation:naturalLanguageDefinition "A relation between a maintenance note and a functional location such that the maintenance note documents work performed at the functional location."@en ,
+                                                                                           "Uma relação entre uma nota de manutenção e um local de instalação tal que a nota de manutenção documenta trabalho realizado no local de instalação."@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000029
+<https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000029> rdf:type owl:ObjectProperty ;
+                                                      rdfs:label "requer função"@pt-br ,
+                                                                 "requires function"@en ;
+                                                      annotation:isPrimitive "true"^^xsd:boolean ;
+                                                      annotation:maturity <https://spec.industrialontologies.org/ontology/individual/Provisional> ;
+                                                      annotation:naturalLanguageDefinition "A relation between a functional location specification and a BFO function such that the specification prescribes that the function must be realized by equipment installed at the associated functional location."@en ,
+                                                                                           "Uma relação entre uma especificação de local de instalação e uma função BFO tal que a especificação prescreve que a função deve ser realizada pelo equipamento instalado no local de instalação associado."@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000030
+<https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000030> rdf:type owl:ObjectProperty ;
+                                                      rdfs:label "requer papel"@pt-br ,
+                                                                 "requires role"@en ;
+                                                      annotation:isPrimitive "true"^^xsd:boolean ;
+                                                      annotation:maturity <https://spec.industrialontologies.org/ontology/individual/Provisional> ;
+                                                      annotation:naturalLanguageDefinition "A relation between a functional location and a required role such that equipment installed at the functional location must bear the specified role."@en ,
+                                                                                           "Uma relação entre um local de instalação e um papel requerido tal que o equipamento instalado no local de instalação deve portar o papel especificado."@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000032
+<https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000032> rdf:type owl:ObjectProperty ;
+                                                      rdfs:label "especifica local de instalação"@pt-br ,
+                                                                 "specifies location"@en ;
+                                                      annotation:isPrimitive "true"^^xsd:boolean ;
+                                                      annotation:maturity <https://spec.industrialontologies.org/ontology/individual/Provisional> ;
+                                                      annotation:naturalLanguageDefinition "A relation between a functional location specification and a functional location such that the specification prescribes the required function and technical constraints at the functional location."@en ,
+                                                                                           "Uma relação entre uma especificação de local de instalação e um local de instalação tal que a especificação prescreve a função requerida e as restrições técnicas no local de instalação."@pt-br .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

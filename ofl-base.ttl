@@ -1,0 +1,88 @@
+@prefix : <https://www.inf.ufrgs.br/ontologies/ofl/ofl-base.ttl#> .
+@prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix ofl: <https://www.inf.ufrgs.br/ontologies/ofl/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iof-av: <https://spec.industrialontologies.org/ontology/annotation/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iof-ind: <https://spec.industrialontologies.org/ontology/individual/> .
+@prefix iof-constr: <https://spec.industrialontologies.org/ontology/construct/> .
+@base <https://www.inf.ufrgs.br/ontologies/ofl/ofl-base.ttl> .
+
+<https://www.inf.ufrgs.br/ontologies/ofl/ofl-base.ttl> rdf:type owl:Ontology ;
+                                                        owl:versionIRI <https://www.inf.ufrgs.br/ontologies/ofl/releases/2026-11-09/ofl-base.ttl> ;
+                                                        dce:type <http://purl.obolibrary.org/obo/IAO_8000001> ;
+                                                        dcterms:contributor "Cauã Antunes"@en ,
+                                                                            "Haroldo Rojas"@en ,
+                                                                            "Joel Carbonera"@en ,
+                                                                            "Mara Abel"@en ,
+                                                                            "Rafael Petry"@en ,
+                                                                            "Regis Romeu"@en ;
+                                                        dcterms:created "2025-12-17"^^xsd:date ;
+                                                        dcterms:creator "Nicolau Santos"@en ;
+                                                        dcterms:description "A BFO-compliant ontology for modeling functional locations as persistent spatial sites in industrial asset management systems, based on the Ontology Design Pattern developed by Santos et al. (2026). The pattern separates five concerns: spatial site (bfo:Site), organizational code (iao:CentrallyRegisteredIdentifier), equipment tag (iao:CentrallyRegisteredIdentifier), functional specification (iao:DirectiveInformationEntity), and installed equipment (iof:MaterialArtifact). Both identifiers denote the functional location site, not the physical equipment — the relationship to equipment is always mediated through the site."@en ,
+                                                                            "Uma ontologia em conformidade com a BFO para modelar locais de instalação como sítios espaciais persistentes em sistemas de gestão de ativos industriais, baseada no padrão de projeto ontológico desenvolvido por Santos et al. (2026). O padrão separa cinco preocupações: sítio espacial (bfo:Site), código do local de instalação (iao:CentrallyRegisteredIdentifier), tag de equipamento (iao:CentrallyRegisteredIdentifier), especificação funcional (iao:DirectiveInformationEntity) e equipamento instalado (iof:MaterialArtifact). Ambos os identificadores denotam o local de instalação, não o equipamento físico — a relação com o equipamento é sempre mediada pelo sítio."@pt-br ;
+                                                        dcterms:license <http://opensource.org/licenses/MIT> ;
+                                                        dcterms:modified "2026-07-01"^^xsd:date ;
+                                                        dcterms:subject "Functional Location"@en ,
+                                                                        "Gestão de Ativos Industriais"@pt-br ,
+                                                                        "ISO 14224"@en ,
+                                                                        "Industrial Asset Management"@en ,
+                                                                        "Local de Instalação"@pt-br ;
+                                                        dcterms:title "Ontologia de Locais de Instalação"@pt-br ,
+                                                                      "Ontology of Functional Locations"@en ;
+                                                        owl:versionInfo "2026-11-09" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/type
+dce:type rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+dcterms:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/subject
+dcterms:subject rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

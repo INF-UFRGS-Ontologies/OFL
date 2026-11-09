@@ -7,20 +7,51 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://www.inf.ufrgs.br/ontologies/ofl/imports/iof-core_import.owl>
-<https://www.inf.ufrgs.br/ontologies/ofl/releases/2026-11-05/imports/iof-core_import.owl>
+<https://www.inf.ufrgs.br/ontologies/ofl/releases/2026-11-09/imports/iof-core_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <https://spec.industrialontologies.org/ontology/202401/core/Core/>)
-Annotation(owl:versionInfo "2026-11-05")
+Annotation(owl:versionInfo "2026-11-09")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000017>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000029>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000034>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000140>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000141>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/Capability>))
 Declaration(Class(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000124>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000171>))
 Declaration(NamedIndividual(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional>))
 Declaration(NamedIndividual(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/modified>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#altLabel>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#example>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
 ############################
 #   Annotation Properties
 ############################
+
+# Annotation Property: <http://purl.org/dc/terms/contributor> (contributor)
+
+AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/contributor> "contributor"@en-us)
+
+# Annotation Property: <http://purl.org/dc/terms/creator> (creator)
+
+AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/creator> "creator"@en-us)
 
 # Annotation Property: <http://purl.org/dc/terms/description> (description)
 
@@ -30,15 +61,159 @@ AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/description> "descripti
 
 AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/license> "license"@en-us)
 
+# Annotation Property: <http://purl.org/dc/terms/modified> (modified)
+
+AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/modified> "modified"@en-us)
+
 # Annotation Property: <http://purl.org/dc/terms/title> (title)
 
 AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/title> "title"@en-us)
+
+# Annotation Property: <http://www.w3.org/2004/02/skos/core#altLabel> (alternative label)
+
+AnnotationAssertion(rdfs:label <http://www.w3.org/2004/02/skos/core#altLabel> "alternative label"@en-us)
+
+# Annotation Property: <http://www.w3.org/2004/02/skos/core#example> (example)
+
+AnnotationAssertion(rdfs:label <http://www.w3.org/2004/02/skos/core#example> "example"@en-us)
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000124> (location of)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000124> "location of"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/BFO_0000124> "location of at some time"@en)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000124> <http://purl.obolibrary.org/obo/BFO_0000171>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000124> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>)))
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000124> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>)))
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000171> (located in)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000171> "located in"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/BFO_0000171> "located in at some time"@en)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000171> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>)))
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000171> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>)))
 
 
 
 ############################
 #   Classes
 ############################
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000001> (entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000001> "entity"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000001> "Julius Caesar; the Second World War; your body mass index; Verdi's Requiem"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/BFO_0000001> "entity"@en)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000002> (continuant)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000002> "continuant"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000002> "A human being; a tennis ball; a cave; a region of space; someone's temperature"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/BFO_0000002> "continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/BFO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000004> (independent continuant)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000004> "independent continuant"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000004> "An atom; a molecule; an organism; a heart; a chair; the bottom right portion of a human torso; a leg; the interior of your mouth; a spatial region; an orchestra"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/BFO_0000004> "independent continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000006> (spatial region)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000006> "spatial region"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000006> "As for zero-dimensional spatial region, one-dimensional spatial region, two-dimensional spatial region, three-dimensional spatial region"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/BFO_0000006> "spatial region"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000006> <http://purl.obolibrary.org/obo/BFO_0000141>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000016> (disposition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000016> "disposition"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.obolibrary.org/obo/BFO_0000016> "internally-grounded realizable entity"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000016> "An atom of element X has the disposition to decay to an atom of element Y; the cell wall is disposed to transport cellular material through endocytosis and exocytosis; certain people have a predisposition to colon cancer; children are innately disposed to categorize objects in certain ways"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/BFO_0000016> "disposition"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000016> <http://purl.obolibrary.org/obo/BFO_0000017>)
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000016> <http://purl.obolibrary.org/obo/BFO_0000023>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000017> (realizable entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000017> "realizable entity"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000017> "The role of being a doctor; the role of this boundary to delineate where Utah and Colorado meet; the function of your reproductive organs; the disposition of your blood to coagulate; the disposition of this piece of metal to conduct electricity"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/BFO_0000017> "realizable entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000017> <http://purl.obolibrary.org/obo/BFO_0000020>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000020> (specifically dependent continuant)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000020> "specifically dependent continuant"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000020> "(with multiple bearers) John's love for Mary; the ownership relation between John and this statue; the relation of authority between John and his subordinates"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000020> "(with one bearer) The mass of this tomato; the pink colour of a medium rare piece of grilled filet mignon at its centre; the smell of this portion of mozzarella; the disposition of this fish to decay; the role of being a doctor; the function of this heart to pump blood; the shape of this hole"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/BFO_0000020> "specifically dependent continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000023> (role)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000023> "role"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.obolibrary.org/obo/BFO_0000023> "externally-grounded realizable entity"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000023> "The priest role; the student role; the role of subject in a clinical trial; the role of a stone in marking a property boundary; the role of a boundary to demarcate two neighbouring administrative territories; the role of a building in serving as a military target"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/BFO_0000023> "role"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000023> <http://purl.obolibrary.org/obo/BFO_0000017>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000029> (site)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000029> "site"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000029> "A hole in a portion of cheese; a rabbit hole; the Grand Canyon; the Piazza San Marco; the kangaroo-joey-containing hole of a kangaroo pouch; your left nostril (a fiat part - the opening - of your left nasal cavity); the lumen of your gut; the hold of a ship; the interior of the trunk of your car; hole in an engineered floor joist"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000029> "location of a container, floor area in a factory building, location of a machine (relative to the coordinate of a factory floor), location on a shelf in a warehouse"@en-us)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/BFO_0000029> "site"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000029> <http://purl.obolibrary.org/obo/BFO_0000141>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000031> (generically dependent continuant)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000031> "generically dependent continuant"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.obolibrary.org/obo/BFO_0000031> "g-dependent continuant"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000031> "The pdf file on your laptop; the pdf file that is a copy thereof on my laptop; the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule; the content that is shared by a string of dots and dashes written on a page and the transmitted Morse code signal; the content of a sentence; an engineering blueprint"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/BFO_0000031> "generically dependent continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000031> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000034> (function)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000034> "function"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000034> "The function of a hammer to drive in nails; the function of a heart pacemaker to regulate the beating of a heart through electricity"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/BFO_0000034> "function"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000034> <http://purl.obolibrary.org/obo/BFO_0000016>)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000034> <https://spec.industrialontologies.org/ontology/core/Core/Capability>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000040> (material entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "material entity"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000040> "A human being; the undetached arm of a human being; an aggregate of human beings"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/BFO_0000040> "material entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000004>)
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000141>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000140> (continuant fiat boundary)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000140> "continuant fiat boundary"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000140> "As for fiat point, fiat line, fiat surface"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/BFO_0000140> "continuant fiat boundary"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000140> <http://purl.obolibrary.org/obo/BFO_0000141>)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000140> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000124> <http://purl.obolibrary.org/obo/BFO_0000140>))
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000141> (immaterial entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000141> "immaterial entity"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000141> "As for fiat point, fiat line, fiat surface, site"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/BFO_0000141> "immaterial entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000141> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/Capability> (capability)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/Capability> "capability"@en-us)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://spec.industrialontologies.org/ontology/core/Core/Capability> "Capability of a person to play chess at the \"master\" level; of a team to play football in the professional league; of a lathe to turn at maximal speed of 4,000 RPM; or of your digestive system to digest tiramisu."@en-us)
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/Capability> <http://purl.obolibrary.org/obo/BFO_0000016>)
 
 # Class: <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel> (maturity level)
 
@@ -60,4 +235,6 @@ AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/c
 ClassAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released>)
 
 
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031>)
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000006> <http://purl.obolibrary.org/obo/BFO_0000029> <http://purl.obolibrary.org/obo/BFO_0000140>)
 )

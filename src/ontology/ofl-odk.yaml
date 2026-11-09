@@ -30,7 +30,7 @@ contributors:
 repo: OFL
 git_main_branch: master
 
-## O3PO Specific Settings ##
+## Ontology Specific Settings ##
 import_group:
   products:
     - id: bfo
