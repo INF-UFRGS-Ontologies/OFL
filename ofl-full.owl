@@ -17,7 +17,7 @@
      xmlns:iof-ind="https://spec.industrialontologies.org/ontology/individual/"
      xmlns:iof-constr="https://spec.industrialontologies.org/ontology/construct/">
     <owl:Ontology rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/ofl-full.owl">
-        <owl:versionIRI rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/releases/2026-11-09/ofl-full.owl"/>
+        <owl:versionIRI rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/releases/2026-11-10/ofl-full.owl"/>
         <dcterms:contributor xml:lang="en">Cauã Antunes</dcterms:contributor>
         <dcterms:contributor xml:lang="en">Haroldo Rojas</dcterms:contributor>
         <dcterms:contributor xml:lang="en">Joel Carbonera</dcterms:contributor>
@@ -37,7 +37,7 @@
         <dcterms:subject xml:lang="pt-br">Local de Instalação</dcterms:subject>
         <dcterms:title xml:lang="pt-br">Ontologia de Locais de Instalação</dcterms:title>
         <dcterms:title xml:lang="en">Ontology of Functional Locations</dcterms:title>
-        <owl:versionInfo>2026-11-09</owl:versionInfo>
+        <owl:versionInfo>2026-11-10</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -505,10 +505,10 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000007 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000006 -->
 
-    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000007">
-        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000006">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:label xml:lang="en">has boundary determined by</rdfs:label>
         <rdfs:label xml:lang="pt-br">tem limite determinado por</rdfs:label>
@@ -524,10 +524,10 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000012 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000011 -->
 
-    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000012">
-        <owl:inverseOf rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000024"/>
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000011">
+        <owl:inverseOf rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000023"/>
         <rdfs:label xml:lang="en">has system site part</rdfs:label>
         <rdfs:label xml:lang="pt-br">tem parte de sítio do sistema</rdfs:label>
         <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/individual/Provisional"/>
@@ -535,15 +535,15 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000013 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000012 -->
 
-    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000013">
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000012">
         <rdfs:domain rdf:resource="https://spec.industrialontologies.org/ontology/construct/MaterialArtifact"/>
         <rdfs:range rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000001"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000018"/>
+            <rdf:Description rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000017"/>
             <rdf:Description>
-                <owl:inverseOf rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000016"/>
+                <owl:inverseOf rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000015"/>
             </rdf:Description>
         </owl:propertyChainAxiom>
         <rdfs:label xml:lang="en">has tag</rdfs:label>
@@ -560,10 +560,10 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000014 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000013 -->
 
-    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000014">
-        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000031"/>
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000013">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000030"/>
         <rdfs:range rdf:resource="https://spec.industrialontologies.org/ontology/construct/MaterialArtifact"/>
         <rdfs:label xml:lang="pt-br">hospedado por</rdfs:label>
         <rdfs:label xml:lang="en">hosted by</rdfs:label>
@@ -576,13 +576,13 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000015 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000014 -->
 
-    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000015">
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000014">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000005"/>
-        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
         <rdfs:label xml:lang="pt-br">identifica</rdfs:label>
         <rdfs:label xml:lang="en">identifies</rdfs:label>
         <iof-av:firstOrderLogicDefinition xml:lang="en">identifies(x,y) → FunctionalLocationCode(x) ∧ FunctionalLocation(y) ∧ denotes(x,y) ∧ ∀z(identifies(x,z) → z = y)</iof-av:firstOrderLogicDefinition>
@@ -595,13 +595,13 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000016 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000015 -->
 
-    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000016">
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000015">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000001"/>
-        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
         <rdfs:label xml:lang="pt-br">identifica local de instalação</rdfs:label>
         <rdfs:label xml:lang="en">identifies location</rdfs:label>
         <iof-av:explanatoryNote xml:lang="en">CRITICAL DESIGN DECISION: The equipment tag denotes the functional location (the position), NOT the physical equipment. The relationship between tag and equipment is mediated through the site via the hasTag property chain.</iof-av:explanatoryNote>
@@ -616,12 +616,12 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000017 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000016 -->
 
-    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000017">
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000016">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000036"/>
-        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000035"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
         <rdfs:label xml:lang="pt-br">indexado por sítio</rdfs:label>
         <rdfs:label xml:lang="en">indexed by site</rdfs:label>
         <rdfs:seeAlso xml:lang="en">CQ2: Temporal continuity across replacements</rdfs:seeAlso>
@@ -634,12 +634,12 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000018 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000017 -->
 
-    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000018">
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000017">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000171"/>
         <rdfs:domain rdf:resource="https://spec.industrialontologies.org/ontology/construct/MaterialArtifact"/>
-        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
         <rdfs:label xml:lang="pt-br">instalado em</rdfs:label>
         <rdfs:label xml:lang="en">installed at</rdfs:label>
         <skos:example xml:lang="en">Sensor_PT23424_v2 installedAt FL_PT23424_Site (2017-06-16 to 2022-03-10)</skos:example>
@@ -653,13 +653,13 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000024 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000023 -->
 
-    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000024">
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000023">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
-        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
         <rdfs:label xml:lang="en">part of system site</rdfs:label>
         <rdfs:label xml:lang="pt-br">parte de sítio do sistema</rdfs:label>
         <skos:example xml:lang="en">MaintainableItemSite partOfSystemSite EquipmentUnitSite</skos:example>
@@ -674,11 +674,11 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000025 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000024 -->
 
-    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000025">
-        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000021"/>
-        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000024">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000020"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
         <rdfs:label xml:lang="en">performed at</rdfs:label>
         <rdfs:label xml:lang="pt-br">realizada em</rdfs:label>
         <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</iof-av:isPrimitive>
@@ -689,10 +689,10 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000029 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000028 -->
 
-    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000029">
-        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000006"/>
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000028">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000005"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
         <rdfs:label xml:lang="pt-br">requer função</rdfs:label>
         <rdfs:label xml:lang="en">requires function</rdfs:label>
@@ -704,11 +704,11 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000030 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000029 -->
 
-    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000030">
-        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
-        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000028"/>
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000029">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000027"/>
         <rdfs:label xml:lang="pt-br">requer papel</rdfs:label>
         <rdfs:label xml:lang="en">requires role</rdfs:label>
         <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</iof-av:isPrimitive>
@@ -719,11 +719,11 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000032 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000031 -->
 
-    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000032">
-        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000006"/>
-        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000031">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000005"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
         <rdfs:label xml:lang="pt-br">especifica local de instalação</rdfs:label>
         <rdfs:label xml:lang="en">specifies location</rdfs:label>
         <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</iof-av:isPrimitive>
@@ -745,11 +745,11 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000008 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000007 -->
 
-    <owl:DatatypeProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000008">
+    <owl:DatatypeProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000007">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:label xml:lang="en">has coordinate X</rdfs:label>
         <rdfs:label xml:lang="pt-br">tem coordenada X</rdfs:label>
@@ -759,11 +759,11 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000009 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000008 -->
 
-    <owl:DatatypeProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000009">
+    <owl:DatatypeProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000008">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:label xml:lang="en">has coordinate Y</rdfs:label>
         <rdfs:label xml:lang="pt-br">tem coordenada Y</rdfs:label>
@@ -773,11 +773,11 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000010 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000009 -->
 
-    <owl:DatatypeProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000010">
+    <owl:DatatypeProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000009">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:label xml:lang="en">has coordinate Z</rdfs:label>
         <rdfs:label xml:lang="pt-br">tem coordenada Z</rdfs:label>
@@ -788,11 +788,11 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000011 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000010 -->
 
-    <owl:DatatypeProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000011">
+    <owl:DatatypeProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000010">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000036"/>
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000035"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">has series label</rdfs:label>
         <rdfs:label xml:lang="pt-br">tem rótulo da série</rdfs:label>
@@ -802,9 +802,9 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000019 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000018 -->
 
-    <owl:DatatypeProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000019">
+    <owl:DatatypeProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000018">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://spec.industrialontologies.org/ontology/construct/MaterialArtifact"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
@@ -817,10 +817,10 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000022 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000021 -->
 
-    <owl:DatatypeProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000022">
-        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000021"/>
+    <owl:DatatypeProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000021">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000020"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">note text</rdfs:label>
         <rdfs:label xml:lang="pt-br">texto da nota</rdfs:label>
@@ -829,11 +829,11 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000023 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000022 -->
 
-    <owl:DatatypeProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000023">
+    <owl:DatatypeProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000022">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000021"/>
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000020"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:label xml:lang="pt-br">carimbo de tempo da nota</rdfs:label>
         <rdfs:label xml:lang="en">note timestamp</rdfs:label>
@@ -842,9 +842,9 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000027 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000026 -->
 
-    <owl:DatatypeProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000027">
+    <owl:DatatypeProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000026">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://spec.industrialontologies.org/ontology/construct/MaterialArtifact"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
@@ -857,11 +857,11 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000033 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000032 -->
 
-    <owl:DatatypeProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000033">
+    <owl:DatatypeProperty rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000032">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000036"/>
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000035"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:label xml:lang="pt-br">armazenado em</rdfs:label>
         <rdfs:label xml:lang="en">stored at</rdfs:label>
@@ -1427,7 +1427,7 @@
     <!-- https://spec.industrialontologies.org/ontology/construct/MaterialArtifact -->
 
     <owl:Class rdf:about="https://spec.industrialontologies.org/ontology/construct/MaterialArtifact">
-        <owl:disjointWith rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
+        <owl:disjointWith rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
     </owl:Class>
     
 
@@ -1456,18 +1456,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000016"/>
-                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000015"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000016"/>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000015"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
+                <owl:onClass rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000005"/>
+        <owl:disjointWith rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
         <rdfs:label xml:lang="en">Equipment Tag</rdfs:label>
         <rdfs:label xml:lang="pt-br">Tag de Equipamento</rdfs:label>
         <skos:altLabel xml:lang="en">Tag</skos:altLabel>
@@ -1494,11 +1494,11 @@
     <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000002 -->
 
     <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000002">
-        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000024"/>
-                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000034"/>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000023"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Equipment Unit Site</rdfs:label>
@@ -1515,24 +1515,10 @@
     <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003 -->
 
     <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-        <rdfs:label xml:lang="en">Flow Regulation Function</rdfs:label>
-        <rdfs:label xml:lang="pt-br">Função de Regulação de Fluxo</rdfs:label>
-        <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</iof-av:isPrimitive>
-        <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/individual/Provisional"/>
-        <iof-av:naturalLanguageDefinition xml:lang="en">A flow regulation function is a BFO function that is realized in a process of controlling the rate, direction, or pressure of fluid flow through a piping system by varying the resistance to flow.</iof-av:naturalLanguageDefinition>
-        <iof-av:naturalLanguageDefinition xml:lang="pt-br">Uma função de regulação de fluxo é uma função BFO que é realizada em um processo de controlar a vazão, direção ou pressão do fluxo de fluido através de um sistema de tubulação variando a resistência ao fluxo.</iof-av:naturalLanguageDefinition>
-    </owl:Class>
-    
-
-
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004 -->
-
-    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000007"/>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000006"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1565,21 +1551,21 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000005 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004 -->
 
-    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000005">
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000015"/>
-                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000014"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000015"/>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000014"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
+                <owl:onClass rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Código do Local de Instalação</rdfs:label>
@@ -1603,14 +1589,14 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000006 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000005 -->
 
-    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000006">
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000032"/>
-                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000031"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Especificação do Local de Instalação</rdfs:label>
@@ -1633,13 +1619,13 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000020 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000019 -->
 
-    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000020">
-        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000019">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000024"/>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000023"/>
                 <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1656,9 +1642,9 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000021 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000020 -->
 
-    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000021">
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
         <rdfs:label xml:lang="en">Maintenance Note</rdfs:label>
         <rdfs:label xml:lang="pt-br">Nota de Manutenção</rdfs:label>
@@ -1670,10 +1656,10 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000026 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000025 -->
 
-    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000026">
-        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000025">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
         <rdfs:label xml:lang="en">Plant Site</rdfs:label>
         <rdfs:label xml:lang="pt-br">Sítio da Planta</rdfs:label>
         <skos:example xml:lang="en">Offshore platform P-74</skos:example>
@@ -1687,9 +1673,9 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000028 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000027 -->
 
-    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000028">
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:label xml:lang="pt-br">Papel Requerido</rdfs:label>
         <rdfs:label xml:lang="en">Required Role</rdfs:label>
@@ -1703,9 +1689,9 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000031 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000030 -->
 
-    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000031">
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000030">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/construct/MaterialArtifact"/>
         <rdfs:label xml:lang="en">Sensor</rdfs:label>
         <rdfs:label xml:lang="pt-br">Sensor</rdfs:label>
@@ -1719,14 +1705,14 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000034 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000033 -->
 
-    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000034">
-        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000033">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000024"/>
-                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000035"/>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000023"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000034"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Subsystem Site</rdfs:label>
@@ -1741,14 +1727,14 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000035 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000034 -->
 
-    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000035">
-        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004"/>
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000034">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000024"/>
-                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000026"/>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000023"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">System Site</rdfs:label>
@@ -1764,9 +1750,9 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000036 -->
+    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000035 -->
 
-    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000036">
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
         <rdfs:label xml:lang="pt-br">Conjunto de Dados Medidos com Carimbo de Tempo</rdfs:label>
         <rdfs:label xml:lang="en">Time-Stamped Measured Dataset</rdfs:label>
@@ -1775,22 +1761,6 @@
         <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/individual/Provisional"/>
         <iof-av:naturalLanguageDefinition xml:lang="en">A time-stamped measured dataset is a data item that contains time-series observations indexed by a functional location for persistent data anchoring across equipment replacements.</iof-av:naturalLanguageDefinition>
         <iof-av:naturalLanguageDefinition xml:lang="pt-br">Um conjunto de dados medidos com carimbo de tempo é um item de dado que contém observações de séries temporais indexadas por um local de instalação para ancoragem persistente de dados através de substituições de equipamento.</iof-av:naturalLanguageDefinition>
-    </owl:Class>
-    
-
-
-    <!-- https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000037 -->
-
-    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000037">
-        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/construct/MaterialArtifact"/>
-        <rdfs:label xml:lang="en">Valve</rdfs:label>
-        <rdfs:label xml:lang="pt-br">Válvula</rdfs:label>
-        <skos:example xml:lang="en">Block valve installed at position XV-23423</skos:example>
-        <skos:example xml:lang="pt-br">Válvula de bloqueio instalada na posição XV-23423</skos:example>
-        <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</iof-av:isPrimitive>
-        <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/individual/Provisional"/>
-        <iof-av:naturalLanguageDefinition xml:lang="en">A valve is an equipment item that controls fluid flow in piping systems.</iof-av:naturalLanguageDefinition>
-        <iof-av:naturalLanguageDefinition xml:lang="pt-br">Uma válvula é um item de equipamento que controla o fluxo de fluido em sistemas de tubulação.</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2040,10 +2010,10 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000002"/>
-            <rdf:Description rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000020"/>
-            <rdf:Description rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000026"/>
+            <rdf:Description rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000019"/>
+            <rdf:Description rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000025"/>
+            <rdf:Description rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000033"/>
             <rdf:Description rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000034"/>
-            <rdf:Description rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000035"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>

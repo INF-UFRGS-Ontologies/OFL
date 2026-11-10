@@ -17,7 +17,7 @@
 @base <https://www.inf.ufrgs.br/ontologies/ofl/ofl-full.ttl> .
 
 <https://www.inf.ufrgs.br/ontologies/ofl/ofl-full.ttl> rdf:type owl:Ontology ;
-                                                        owl:versionIRI <https://www.inf.ufrgs.br/ontologies/ofl/releases/2026-11-09/ofl-full.ttl> ;
+                                                        owl:versionIRI <https://www.inf.ufrgs.br/ontologies/ofl/releases/2026-11-10/ofl-full.ttl> ;
                                                         dcterms:contributor "Cauã Antunes"@en ,
                                                                             "Haroldo Rojas"@en ,
                                                                             "Joel Carbonera"@en ,
@@ -37,7 +37,7 @@
                                                                         "Local de Instalação"@pt-br ;
                                                         dcterms:title "Ontologia de Locais de Instalação"@pt-br ,
                                                                       "Ontology of Functional Locations"@en ;
-                                                        owl:versionInfo "2026-11-09" .
+                                                        owl:versionInfo "2026-11-10" .
 
 #################################################################
 #    Annotation properties
@@ -352,9 +352,9 @@ obo:RO_0000092 rdf:type owl:ObjectProperty ;
                rdfs:label "disposition of"@en .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000007
-ofl:OFL_0000007 rdf:type owl:ObjectProperty ;
-                rdfs:domain ofl:OFL_0000004 ;
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000006
+ofl:OFL_0000006 rdf:type owl:ObjectProperty ;
+                rdfs:domain ofl:OFL_0000003 ;
                 rdfs:range obo:BFO_0000040 ;
                 rdfs:label "has boundary determined by"@en ,
                            "tem limite determinado por"@pt-br ;
@@ -368,20 +368,20 @@ ofl:OFL_0000007 rdf:type owl:ObjectProperty ;
                 iof-av:usageNote "Implements BFO site semantics: site boundaries are determined in relation to material entities but not by coincidence with those entities."@en .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000012
-ofl:OFL_0000012 rdf:type owl:ObjectProperty ;
-                owl:inverseOf ofl:OFL_0000024 ;
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000011
+ofl:OFL_0000011 rdf:type owl:ObjectProperty ;
+                owl:inverseOf ofl:OFL_0000023 ;
                 rdfs:label "has system site part"@en ,
                            "tem parte de sítio do sistema"@pt-br ;
                 iof-av:maturity iof-ind:Provisional .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000013
-ofl:OFL_0000013 rdf:type owl:ObjectProperty ;
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000012
+ofl:OFL_0000012 rdf:type owl:ObjectProperty ;
                 rdfs:domain iof-constr:MaterialArtifact ;
                 rdfs:range ofl:OFL_0000001 ;
-                owl:propertyChainAxiom ( ofl:OFL_0000018
-                                         [ owl:inverseOf ofl:OFL_0000016
+                owl:propertyChainAxiom ( ofl:OFL_0000017
+                                         [ owl:inverseOf ofl:OFL_0000015
                                          ]
                                        ) ;
                 rdfs:label "has tag"@en ,
@@ -396,9 +396,9 @@ ofl:OFL_0000013 rdf:type owl:ObjectProperty ;
                 iof-av:semiFormalNaturalLanguageDefinition "if x hasTag y then there exists a FunctionalLocation z such that x installedAt z and y identifiesLocation z"@en .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000014
-ofl:OFL_0000014 rdf:type owl:ObjectProperty ;
-                rdfs:domain ofl:OFL_0000031 ;
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000013
+ofl:OFL_0000013 rdf:type owl:ObjectProperty ;
+                rdfs:domain ofl:OFL_0000030 ;
                 rdfs:range iof-constr:MaterialArtifact ;
                 rdfs:label "hospedado por"@pt-br ,
                            "hosted by"@en ;
@@ -409,12 +409,12 @@ ofl:OFL_0000014 rdf:type owl:ObjectProperty ;
                                                  "Uma relação entre um sensor e um item de equipamento tal que o sensor está fisicamente montado no item de equipamento. O sensor tem seu próprio local de instalação, mas é fisicamente hospedado pelo equipamento."@pt-br .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000015
-ofl:OFL_0000015 rdf:type owl:ObjectProperty ;
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000014
+ofl:OFL_0000014 rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf obo:IAO_0000219 ;
                 rdf:type owl:FunctionalProperty ;
-                rdfs:domain ofl:OFL_0000005 ;
-                rdfs:range ofl:OFL_0000004 ;
+                rdfs:domain ofl:OFL_0000004 ;
+                rdfs:range ofl:OFL_0000003 ;
                 rdfs:label "identifica"@pt-br ,
                            "identifies"@en ;
                 iof-av:firstOrderLogicDefinition "identifies(x,y) → FunctionalLocationCode(x) ∧ FunctionalLocation(y) ∧ denotes(x,y) ∧ ∀z(identifies(x,z) → z = y)"@en ;
@@ -425,12 +425,12 @@ ofl:OFL_0000015 rdf:type owl:ObjectProperty ;
                 iof-av:semiFormalNaturalLanguageDefinition "if x identifies y then x is a FunctionalLocationCode and y is a FunctionalLocation and x uniquely denotes y"@en .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000016
-ofl:OFL_0000016 rdf:type owl:ObjectProperty ;
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000015
+ofl:OFL_0000015 rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf obo:IAO_0000219 ;
                 rdf:type owl:FunctionalProperty ;
                 rdfs:domain ofl:OFL_0000001 ;
-                rdfs:range ofl:OFL_0000004 ;
+                rdfs:range ofl:OFL_0000003 ;
                 rdfs:label "identifica local de instalação"@pt-br ,
                            "identifies location"@en ;
                 iof-av:explanatoryNote "CRITICAL DESIGN DECISION: The equipment tag denotes the functional location (the position), NOT the physical equipment. The relationship between tag and equipment is mediated through the site via the hasTag property chain."@en ,
@@ -443,11 +443,11 @@ ofl:OFL_0000016 rdf:type owl:ObjectProperty ;
                 iof-av:semiFormalNaturalLanguageDefinition "if x identifiesLocation y then x is an EquipmentTag and y is a FunctionalLocation and x denotes y"@en .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000017
-ofl:OFL_0000017 rdf:type owl:ObjectProperty ,
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000016
+ofl:OFL_0000016 rdf:type owl:ObjectProperty ,
                          owl:FunctionalProperty ;
-                rdfs:domain ofl:OFL_0000036 ;
-                rdfs:range ofl:OFL_0000004 ;
+                rdfs:domain ofl:OFL_0000035 ;
+                rdfs:range ofl:OFL_0000003 ;
                 rdfs:label "indexado por sítio"@pt-br ,
                            "indexed by site"@en ;
                 rdfs:seeAlso "CQ2: Temporal continuity across replacements"@en ;
@@ -458,11 +458,11 @@ ofl:OFL_0000017 rdf:type owl:ObjectProperty ,
                 iof-av:usageNote "KEY PATTERN: Enables automatic continuity without application logic to 'stitch' data from different equipment instances."@en .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000018
-ofl:OFL_0000018 rdf:type owl:ObjectProperty ;
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000017
+ofl:OFL_0000017 rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf obo:BFO_0000171 ;
                 rdfs:domain iof-constr:MaterialArtifact ;
-                rdfs:range ofl:OFL_0000004 ;
+                rdfs:range ofl:OFL_0000003 ;
                 rdfs:label "instalado em"@pt-br ,
                            "installed at"@en ;
                 skos:example "Sensor_PT23424_v2 installedAt FL_PT23424_Site (2017-06-16 to 2022-03-10)"@en ;
@@ -474,12 +474,12 @@ ofl:OFL_0000018 rdf:type owl:ObjectProperty ;
                 iof-av:semiFormalNaturalLanguageDefinition "if x installedAt y then x is a MaterialArtifact and y is a FunctionalLocation and x is located in y at some time"@en .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000024
-ofl:OFL_0000024 rdf:type owl:ObjectProperty ;
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000023
+ofl:OFL_0000023 rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf obo:BFO_0000050 ;
                 rdf:type owl:TransitiveProperty ;
-                rdfs:domain ofl:OFL_0000004 ;
-                rdfs:range ofl:OFL_0000004 ;
+                rdfs:domain ofl:OFL_0000003 ;
+                rdfs:range ofl:OFL_0000003 ;
                 rdfs:label "part of system site"@en ,
                            "parte de sítio do sistema"@pt-br ;
                 skos:example "MaintainableItemSite partOfSystemSite EquipmentUnitSite"@en ,
@@ -492,10 +492,10 @@ ofl:OFL_0000024 rdf:type owl:ObjectProperty ;
                 iof-av:semiFormalNaturalLanguageDefinition "if x partOfSystemSite y then x is a FunctionalLocation and y is a FunctionalLocation and x is part of y"@en .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000025
-ofl:OFL_0000025 rdf:type owl:ObjectProperty ;
-                rdfs:domain ofl:OFL_0000021 ;
-                rdfs:range ofl:OFL_0000004 ;
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000024
+ofl:OFL_0000024 rdf:type owl:ObjectProperty ;
+                rdfs:domain ofl:OFL_0000020 ;
+                rdfs:range ofl:OFL_0000003 ;
                 rdfs:label "performed at"@en ,
                            "realizada em"@pt-br ;
                 iof-av:isPrimitive "true"^^xsd:boolean ;
@@ -504,9 +504,9 @@ ofl:OFL_0000025 rdf:type owl:ObjectProperty ;
                                                  "Uma relação entre uma nota de manutenção e um local de instalação tal que a nota de manutenção documenta trabalho realizado no local de instalação."@pt-br .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000029
-ofl:OFL_0000029 rdf:type owl:ObjectProperty ;
-                rdfs:domain ofl:OFL_0000006 ;
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000028
+ofl:OFL_0000028 rdf:type owl:ObjectProperty ;
+                rdfs:domain ofl:OFL_0000005 ;
                 rdfs:range obo:BFO_0000034 ;
                 rdfs:label "requer função"@pt-br ,
                            "requires function"@en ;
@@ -516,10 +516,10 @@ ofl:OFL_0000029 rdf:type owl:ObjectProperty ;
                                                  "Uma relação entre uma especificação de local de instalação e uma função BFO tal que a especificação prescreve que a função deve ser realizada pelo equipamento instalado no local de instalação associado."@pt-br .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000030
-ofl:OFL_0000030 rdf:type owl:ObjectProperty ;
-                rdfs:domain ofl:OFL_0000004 ;
-                rdfs:range ofl:OFL_0000028 ;
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000029
+ofl:OFL_0000029 rdf:type owl:ObjectProperty ;
+                rdfs:domain ofl:OFL_0000003 ;
+                rdfs:range ofl:OFL_0000027 ;
                 rdfs:label "requer papel"@pt-br ,
                            "requires role"@en ;
                 iof-av:isPrimitive "true"^^xsd:boolean ;
@@ -528,10 +528,10 @@ ofl:OFL_0000030 rdf:type owl:ObjectProperty ;
                                                  "Uma relação entre um local de instalação e um papel requerido tal que o equipamento instalado no local de instalação deve portar o papel especificado."@pt-br .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000032
-ofl:OFL_0000032 rdf:type owl:ObjectProperty ;
-                rdfs:domain ofl:OFL_0000006 ;
-                rdfs:range ofl:OFL_0000004 ;
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000031
+ofl:OFL_0000031 rdf:type owl:ObjectProperty ;
+                rdfs:domain ofl:OFL_0000005 ;
+                rdfs:range ofl:OFL_0000003 ;
                 rdfs:label "especifica local de instalação"@pt-br ,
                            "specifies location"@en ;
                 iof-av:isPrimitive "true"^^xsd:boolean ;
@@ -544,10 +544,10 @@ ofl:OFL_0000032 rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000008
-ofl:OFL_0000008 rdf:type owl:DatatypeProperty ,
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000007
+ofl:OFL_0000007 rdf:type owl:DatatypeProperty ,
                          owl:FunctionalProperty ;
-                rdfs:domain ofl:OFL_0000004 ;
+                rdfs:domain ofl:OFL_0000003 ;
                 rdfs:range xsd:double ;
                 rdfs:label "has coordinate X"@en ,
                            "tem coordenada X"@pt-br ;
@@ -555,10 +555,10 @@ ofl:OFL_0000008 rdf:type owl:DatatypeProperty ,
                 iof-av:naturalLanguageDefinition "The X coordinate of a functional location relative to a material reference frame."@en .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000009
-ofl:OFL_0000009 rdf:type owl:DatatypeProperty ,
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000008
+ofl:OFL_0000008 rdf:type owl:DatatypeProperty ,
                          owl:FunctionalProperty ;
-                rdfs:domain ofl:OFL_0000004 ;
+                rdfs:domain ofl:OFL_0000003 ;
                 rdfs:range xsd:double ;
                 rdfs:label "has coordinate Y"@en ,
                            "tem coordenada Y"@pt-br ;
@@ -566,10 +566,10 @@ ofl:OFL_0000009 rdf:type owl:DatatypeProperty ,
                 iof-av:naturalLanguageDefinition "The Y coordinate of a functional location relative to a material reference frame."@en .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000010
-ofl:OFL_0000010 rdf:type owl:DatatypeProperty ,
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000009
+ofl:OFL_0000009 rdf:type owl:DatatypeProperty ,
                          owl:FunctionalProperty ;
-                rdfs:domain ofl:OFL_0000004 ;
+                rdfs:domain ofl:OFL_0000003 ;
                 rdfs:range xsd:double ;
                 rdfs:label "has coordinate Z"@en ,
                            "tem coordenada Z"@pt-br ;
@@ -578,10 +578,10 @@ ofl:OFL_0000010 rdf:type owl:DatatypeProperty ,
                 iof-av:naturalLanguageDefinition "The Z coordinate (elevation) of a functional location relative to a material reference frame."@en .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000011
-ofl:OFL_0000011 rdf:type owl:DatatypeProperty ,
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000010
+ofl:OFL_0000010 rdf:type owl:DatatypeProperty ,
                          owl:FunctionalProperty ;
-                rdfs:domain ofl:OFL_0000036 ;
+                rdfs:domain ofl:OFL_0000035 ;
                 rdfs:range xsd:string ;
                 rdfs:label "has series label"@en ,
                            "tem rótulo da série"@pt-br ;
@@ -589,8 +589,8 @@ ofl:OFL_0000011 rdf:type owl:DatatypeProperty ,
                 iof-av:naturalLanguageDefinition "A user-facing label for a time series dataset."@en .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000019
-ofl:OFL_0000019 rdf:type owl:DatatypeProperty ,
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000018
+ofl:OFL_0000018 rdf:type owl:DatatypeProperty ,
                          owl:FunctionalProperty ;
                 rdfs:domain iof-constr:MaterialArtifact ;
                 rdfs:range xsd:dateTime ;
@@ -601,27 +601,27 @@ ofl:OFL_0000019 rdf:type owl:DatatypeProperty ,
                                                  "The timestamp when equipment was installed at a functional location."@en .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000022
-ofl:OFL_0000022 rdf:type owl:DatatypeProperty ;
-                rdfs:domain ofl:OFL_0000021 ;
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000021
+ofl:OFL_0000021 rdf:type owl:DatatypeProperty ;
+                rdfs:domain ofl:OFL_0000020 ;
                 rdfs:range xsd:string ;
                 rdfs:label "note text"@en ,
                            "texto da nota"@pt-br ;
                 iof-av:maturity iof-ind:Provisional .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000023
-ofl:OFL_0000023 rdf:type owl:DatatypeProperty ,
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000022
+ofl:OFL_0000022 rdf:type owl:DatatypeProperty ,
                          owl:FunctionalProperty ;
-                rdfs:domain ofl:OFL_0000021 ;
+                rdfs:domain ofl:OFL_0000020 ;
                 rdfs:range xsd:dateTime ;
                 rdfs:label "carimbo de tempo da nota"@pt-br ,
                            "note timestamp"@en ;
                 iof-av:maturity iof-ind:Provisional .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000027
-ofl:OFL_0000027 rdf:type owl:DatatypeProperty ,
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000026
+ofl:OFL_0000026 rdf:type owl:DatatypeProperty ,
                          owl:FunctionalProperty ;
                 rdfs:domain iof-constr:MaterialArtifact ;
                 rdfs:range xsd:dateTime ;
@@ -632,10 +632,10 @@ ofl:OFL_0000027 rdf:type owl:DatatypeProperty ,
                                                  "The timestamp when equipment was removed from a functional location. Absence indicates equipment is currently installed."@en .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000033
-ofl:OFL_0000033 rdf:type owl:DatatypeProperty ,
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000032
+ofl:OFL_0000032 rdf:type owl:DatatypeProperty ,
                          owl:FunctionalProperty ;
-                rdfs:domain ofl:OFL_0000036 ;
+                rdfs:domain ofl:OFL_0000035 ;
                 rdfs:range xsd:anyURI ;
                 rdfs:label "armazenado em"@pt-br ,
                            "stored at"@en ;
@@ -1037,7 +1037,7 @@ obo:IAO_0020020 rdf:type owl:Class ;
 
 ###  https://spec.industrialontologies.org/ontology/construct/MaterialArtifact
 iof-constr:MaterialArtifact rdf:type owl:Class ;
-                            owl:disjointWith ofl:OFL_0000004 .
+                            owl:disjointWith ofl:OFL_0000003 .
 
 
 ###  https://spec.industrialontologies.org/ontology/core/Core/Capability
@@ -1056,15 +1056,15 @@ iof-constr:MaterialArtifact rdf:type owl:Class ;
 ofl:OFL_0000001 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000578 ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty ofl:OFL_0000016 ;
-                                  owl:someValuesFrom ofl:OFL_0000004
+                                  owl:onProperty ofl:OFL_0000015 ;
+                                  owl:someValuesFrom ofl:OFL_0000003
                                 ] ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty ofl:OFL_0000016 ;
+                                  owl:onProperty ofl:OFL_0000015 ;
                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                  owl:onClass ofl:OFL_0000004
+                                  owl:onClass ofl:OFL_0000003
                                 ] ;
-                owl:disjointWith ofl:OFL_0000005 ;
+                owl:disjointWith ofl:OFL_0000004 ;
                 rdfs:label "Equipment Tag"@en ,
                            "Tag de Equipamento"@pt-br ;
                 skos:altLabel "Tag"@en ,
@@ -1088,10 +1088,10 @@ ofl:OFL_0000001 rdf:type owl:Class ;
 
 ###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000002
 ofl:OFL_0000002 rdf:type owl:Class ;
-                rdfs:subClassOf ofl:OFL_0000004 ,
+                rdfs:subClassOf ofl:OFL_0000003 ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty ofl:OFL_0000024 ;
-                                  owl:someValuesFrom ofl:OFL_0000034
+                                  owl:onProperty ofl:OFL_0000023 ;
+                                  owl:someValuesFrom ofl:OFL_0000033
                                 ] ;
                 rdfs:label "Equipment Unit Site"@en ,
                            "Sítio da Unidade de Equipamento"@pt-br ;
@@ -1104,20 +1104,9 @@ ofl:OFL_0000002 rdf:type owl:Class ;
 
 ###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000003
 ofl:OFL_0000003 rdf:type owl:Class ;
-                rdfs:subClassOf obo:BFO_0000034 ;
-                rdfs:label "Flow Regulation Function"@en ,
-                           "Função de Regulação de Fluxo"@pt-br ;
-                iof-av:isPrimitive "true"^^xsd:boolean ;
-                iof-av:maturity iof-ind:Provisional ;
-                iof-av:naturalLanguageDefinition "A flow regulation function is a BFO function that is realized in a process of controlling the rate, direction, or pressure of fluid flow through a piping system by varying the resistance to flow."@en ,
-                                                 "Uma função de regulação de fluxo é uma função BFO que é realizada em um processo de controlar a vazão, direção ou pressão do fluxo de fluido através de um sistema de tubulação variando a resistência ao fluxo."@pt-br .
-
-
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004
-ofl:OFL_0000004 rdf:type owl:Class ;
                 rdfs:subClassOf obo:BFO_0000029 ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty ofl:OFL_0000007 ;
+                                  owl:onProperty ofl:OFL_0000006 ;
                                   owl:someValuesFrom obo:BFO_0000040
                                 ] ;
                 rdfs:label "Functional Location"@en ,
@@ -1147,17 +1136,17 @@ ofl:OFL_0000004 rdf:type owl:Class ;
                                  "Um local de instalação persiste quando vazio — quando o equipamento é removido, os bocais de entrada/saída e os parafusos de fundação permanecem, então os limites do sítio permanecem ancorados."@pt-br .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000005
-ofl:OFL_0000005 rdf:type owl:Class ;
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000004
+ofl:OFL_0000004 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000578 ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty ofl:OFL_0000015 ;
-                                  owl:someValuesFrom ofl:OFL_0000004
+                                  owl:onProperty ofl:OFL_0000014 ;
+                                  owl:someValuesFrom ofl:OFL_0000003
                                 ] ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty ofl:OFL_0000015 ;
+                                  owl:onProperty ofl:OFL_0000014 ;
                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                  owl:onClass ofl:OFL_0000004
+                                  owl:onClass ofl:OFL_0000003
                                 ] ;
                 rdfs:label "Código do Local de Instalação"@pt-br ,
                            "Functional Location Code"@en ;
@@ -1178,12 +1167,12 @@ ofl:OFL_0000005 rdf:type owl:Class ;
                 iof-av:semiFormalNaturalLanguageDefinition "every instance of FunctionalLocationCode is an instance of iao:CentrallyRegisteredIdentifier that identifies exactly one FunctionalLocation and that is disjoint from EquipmentTag"@en .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000006
-ofl:OFL_0000006 rdf:type owl:Class ;
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000005
+ofl:OFL_0000005 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000033 ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty ofl:OFL_0000032 ;
-                                  owl:someValuesFrom ofl:OFL_0000004
+                                  owl:onProperty ofl:OFL_0000031 ;
+                                  owl:someValuesFrom ofl:OFL_0000003
                                 ] ;
                 rdfs:label "Especificação do Local de Instalação"@pt-br ,
                            "Functional Location Specification"@en ;
@@ -1203,11 +1192,11 @@ ofl:OFL_0000006 rdf:type owl:Class ;
                                "FL Specification"@en .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000020
-ofl:OFL_0000020 rdf:type owl:Class ;
-                rdfs:subClassOf ofl:OFL_0000004 ,
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000019
+ofl:OFL_0000019 rdf:type owl:Class ;
+                rdfs:subClassOf ofl:OFL_0000003 ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty ofl:OFL_0000024 ;
+                                  owl:onProperty ofl:OFL_0000023 ;
                                   owl:someValuesFrom ofl:OFL_0000002
                                 ] ;
                 rdfs:label "Maintainable Item Site"@en ,
@@ -1221,8 +1210,8 @@ ofl:OFL_0000020 rdf:type owl:Class ;
                                                  "Um sítio do item manutenível é um local de instalação que é o nível mais baixo na hierarquia ISO 14224 onde um único item manutenível está ou pode ser instalado."@pt-br .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000021
-ofl:OFL_0000021 rdf:type owl:Class ;
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000020
+ofl:OFL_0000020 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000100 ;
                 rdfs:label "Maintenance Note"@en ,
                            "Nota de Manutenção"@pt-br ;
@@ -1232,9 +1221,9 @@ ofl:OFL_0000021 rdf:type owl:Class ;
                                                  "Uma nota de manutenção é um item de dado que é um registro textual criado durante trabalho de manutenção, ancorado a um local de instalação ao invés de ao equipamento para persistência através de substituições."@pt-br .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000026
-ofl:OFL_0000026 rdf:type owl:Class ;
-                rdfs:subClassOf ofl:OFL_0000004 ;
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000025
+ofl:OFL_0000025 rdf:type owl:Class ;
+                rdfs:subClassOf ofl:OFL_0000003 ;
                 rdfs:label "Plant Site"@en ,
                            "Sítio da Planta"@pt-br ;
                 skos:example "Offshore platform P-74"@en ,
@@ -1246,8 +1235,8 @@ ofl:OFL_0000026 rdf:type owl:Class ;
                                                  "Um sítio da planta é um local de instalação que é o nível mais alto na hierarquia ISO 14224, representando uma planta ou instalação industrial inteira."@pt-br .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000028
-ofl:OFL_0000028 rdf:type owl:Class ;
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000027
+ofl:OFL_0000027 rdf:type owl:Class ;
                 rdfs:subClassOf obo:BFO_0000023 ;
                 rdfs:label "Papel Requerido"@pt-br ,
                            "Required Role"@en ;
@@ -1259,8 +1248,8 @@ ofl:OFL_0000028 rdf:type owl:Class ;
                                                  "Um papel requerido é um papel BFO que especifica os requisitos funcionais para equipamento em um local de instalação."@pt-br .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000031
-ofl:OFL_0000031 rdf:type owl:Class ;
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000030
+ofl:OFL_0000030 rdf:type owl:Class ;
                 rdfs:subClassOf iof-constr:MaterialArtifact ;
                 rdfs:label "Sensor"@en ,
                            "Sensor"@pt-br ;
@@ -1272,12 +1261,12 @@ ofl:OFL_0000031 rdf:type owl:Class ;
                                                  "Um sensor é um item de equipamento que mede propriedades físicas tais como pressão, temperatura ou vazão."@pt-br .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000034
-ofl:OFL_0000034 rdf:type owl:Class ;
-                rdfs:subClassOf ofl:OFL_0000004 ,
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000033
+ofl:OFL_0000033 rdf:type owl:Class ;
+                rdfs:subClassOf ofl:OFL_0000003 ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty ofl:OFL_0000024 ;
-                                  owl:someValuesFrom ofl:OFL_0000035
+                                  owl:onProperty ofl:OFL_0000023 ;
+                                  owl:someValuesFrom ofl:OFL_0000034
                                 ] ;
                 rdfs:label "Subsystem Site"@en ,
                            "Sítio do Subsistema"@pt-br ;
@@ -1289,12 +1278,12 @@ ofl:OFL_0000034 rdf:type owl:Class ;
                                                  "Um sítio do subsistema é um local de instalação que representa um subsistema dentro de um sistema na hierarquia ISO 14224."@pt-br .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000035
-ofl:OFL_0000035 rdf:type owl:Class ;
-                rdfs:subClassOf ofl:OFL_0000004 ,
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000034
+ofl:OFL_0000034 rdf:type owl:Class ;
+                rdfs:subClassOf ofl:OFL_0000003 ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty ofl:OFL_0000024 ;
-                                  owl:someValuesFrom ofl:OFL_0000026
+                                  owl:onProperty ofl:OFL_0000023 ;
+                                  owl:someValuesFrom ofl:OFL_0000025
                                 ] ;
                 rdfs:label "System Site"@en ,
                            "Sítio do Sistema"@pt-br ;
@@ -1307,8 +1296,8 @@ ofl:OFL_0000035 rdf:type owl:Class ;
                                                  "Um sítio do sistema é um local de instalação que representa um sistema principal dentro de uma planta na hierarquia ISO 14224."@pt-br .
 
 
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000036
-ofl:OFL_0000036 rdf:type owl:Class ;
+###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000035
+ofl:OFL_0000035 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000100 ;
                 rdfs:label "Conjunto de Dados Medidos com Carimbo de Tempo"@pt-br ,
                            "Time-Stamped Measured Dataset"@en ;
@@ -1317,19 +1306,6 @@ ofl:OFL_0000036 rdf:type owl:Class ;
                 iof-av:maturity iof-ind:Provisional ;
                 iof-av:naturalLanguageDefinition "A time-stamped measured dataset is a data item that contains time-series observations indexed by a functional location for persistent data anchoring across equipment replacements."@en ,
                                                  "Um conjunto de dados medidos com carimbo de tempo é um item de dado que contém observações de séries temporais indexadas por um local de instalação para ancoragem persistente de dados através de substituições de equipamento."@pt-br .
-
-
-###  https://www.inf.ufrgs.br/ontologies/ofl/OFL_0000037
-ofl:OFL_0000037 rdf:type owl:Class ;
-                rdfs:subClassOf iof-constr:MaterialArtifact ;
-                rdfs:label "Valve"@en ,
-                           "Válvula"@pt-br ;
-                skos:example "Block valve installed at position XV-23423"@en ,
-                             "Válvula de bloqueio instalada na posição XV-23423"@pt-br ;
-                iof-av:isPrimitive "true"^^xsd:boolean ;
-                iof-av:maturity iof-ind:Provisional ;
-                iof-av:naturalLanguageDefinition "A valve is an equipment item that controls fluid flow in piping systems."@en ,
-                                                 "Uma válvula é um item de equipamento que controla o fluxo de fluido em sistemas de tubulação."@pt-br .
 
 
 #################################################################
@@ -1501,10 +1477,10 @@ obo:OMO_0001002 rdf:type owl:NamedIndividual ,
 
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( ofl:OFL_0000002
-                ofl:OFL_0000020
-                ofl:OFL_0000026
+                ofl:OFL_0000019
+                ofl:OFL_0000025
+                ofl:OFL_0000033
                 ofl:OFL_0000034
-                ofl:OFL_0000035
               )
 ] .
 

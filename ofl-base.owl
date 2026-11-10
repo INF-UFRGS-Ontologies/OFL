@@ -14,7 +14,7 @@
      xmlns:iof-ind="https://spec.industrialontologies.org/ontology/individual/"
      xmlns:iof-constr="https://spec.industrialontologies.org/ontology/construct/">
     <owl:Ontology rdf:about="https://www.inf.ufrgs.br/ontologies/ofl/ofl-base.owl">
-        <owl:versionIRI rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/releases/2026-11-09/ofl-base.owl"/>
+        <owl:versionIRI rdf:resource="https://www.inf.ufrgs.br/ontologies/ofl/releases/2026-11-10/ofl-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:contributor xml:lang="en">Cauã Antunes</dcterms:contributor>
         <dcterms:contributor xml:lang="en">Haroldo Rojas</dcterms:contributor>
@@ -35,7 +35,7 @@
         <dcterms:subject xml:lang="pt-br">Local de Instalação</dcterms:subject>
         <dcterms:title xml:lang="pt-br">Ontologia de Locais de Instalação</dcterms:title>
         <dcterms:title xml:lang="en">Ontology of Functional Locations</dcterms:title>
-        <owl:versionInfo>2026-11-09</owl:versionInfo>
+        <owl:versionInfo>2026-11-10</owl:versionInfo>
     </owl:Ontology>
     
 
